@@ -1,0 +1,97 @@
+/* Root class for the entire component */
+.FIN-payment-rq-display-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f4e1; /* Soft light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Heading styling */
+.FIN-payment-rq-display-container h1 {
+  color: #74512d; /* Rich brown */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table styling */
+.FIN-payment-rq-display-container .FIN-user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.FIN-payment-rq-display-container .FIN-user-table th,
+.FIN-payment-rq-display-container .FIN-user-table td {
+  padding: 12px 15px;
+  font-size: 1rem;
+  color: #2c3e50;
+  border-bottom: 1px solid #bdc3c7;
+  text-align: left;
+}
+
+/* Table header styling */
+.FIN-payment-rq-display-container .FIN-user-table th {
+  font-weight: 600;
+  color: #74512d; /* Rich brown */
+  background-color: #f0e4cc; /* Light gold header background */
+  border-bottom: 2px solid #74512d;
+}
+
+/* Table cell styling */
+.FIN-payment-rq-display-container .FIN-user-table td {
+  background-color: #fafafa;
+}
+
+/* Button styling */
+.FIN-payment-rq-display-container .MuiButton-containedPrimary {
+  background-color: #2ecc71; /* Green button for update */
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  padding: 8px 12px;
+}
+
+.FIN-payment-rq-display-container .MuiButton-containedPrimary:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+.FIN-payment-rq-display-container .MuiButton-containedSecondary {
+  background-color: #e74c3c; /* Red button for delete */
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  padding: 8px 12px;
+}
+
+.FIN-payment-rq-display-container .MuiButton-containedSecondary:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .FIN-payment-rq-display-container {
+      padding: 15px;
+  }
+
+  .FIN-payment-rq-display-container h1 {
+      font-size: 1.5rem;
+  }
+
+  .FIN-payment-rq-display-container .FIN-user-table th,
+  .FIN-payment-rq-display-container .FIN-user-table td {
+      font-size: 0.9rem;
+  }
+
+  .FIN-payment-rq-display-container .MuiButton-containedPrimary,
+  .FIN-payment-rq-display-container .MuiButton-containedSecondary {
+      font-size: 0.9rem;
+      padding: 6px 10px;
+  }
+}

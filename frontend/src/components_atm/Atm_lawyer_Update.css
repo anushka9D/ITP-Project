@@ -1,0 +1,139 @@
+:root {
+  --white: white;
+  --background-color: #f6f6f6;
+  --primary-color: #F8F4E1;
+  --secondary-color: #afa66f;
+  --accent-color: #74512D;
+  --dark-color: #544010;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Geologica', sans-serif;
+}
+
+.user-details-container {
+  border: 2px solid var(--secondary-color);
+  padding: 24px; /* Adjusted padding for more spacing */
+  border-radius: 12px; /* Optional, for rounded corners */
+  background-color: var(--white); /* Added background color for better contrast */
+  max-width: 800px; /* Limited width for better responsiveness */
+  margin: 40px auto; /* Centered the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow for a cleaner look */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px; /* Spacing below the table */
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--secondary-color);
+  word-wrap: break-word; /* Allow word breaking */
+}
+
+td:first-child {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.table {
+  margin-top: 20px; /* Add space above the table */
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.action-buttons .MuiButton-root {
+  margin: 5px; /* Add space between buttons */
+}
+
+.green-button {
+  background-color: green;
+  color: white;
+}
+
+.inactive-button {
+  background-color: #544010;
+  color: var(--white);
+  margin-left: auto;
+}
+
+.inactive-button:hover {
+  background-color: #74512D;
+}
+
+.MuiDialog-paper {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.MuiDialogTitle-root {
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 16px;
+}
+
+.MuiDialogContent-root {
+  padding: 24px;
+}
+
+.MuiTextField-root {
+  margin-bottom: 16px;
+}
+
+.MuiInputBase-input {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MuiDialogActions-root {
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.MuiButton-root {
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.MuiButton-containedPrimary {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.MuiButton-containedSecondary {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: var(--secondary-color);
+}
+
+.MuiButton-containedSecondary:hover {
+  background-color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+  .user-details-container {
+      padding: 12px;
+      margin: 20px auto;
+  }
+
+  .MuiDialog-paper {
+      width: 90%;
+      margin: 0 auto;
+  }
+}

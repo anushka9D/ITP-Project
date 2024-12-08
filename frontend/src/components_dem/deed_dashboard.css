@@ -1,0 +1,136 @@
+/* General styles */
+.dem_dashboard body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.dem-dashboard-feature-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.dem-dashboard-feature-section-top {
+    text-align: center;
+    margin-bottom: 20px;   
+}
+
+.dem-dashboard-feature-section h1 {
+    font-size: 24px;
+    color: #36200a;
+}
+
+/* Feature info section */
+.dem-dashboard-feature-section-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dem-dashboard-feature-section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    color: #36200a;
+    transition: background-color 0.3s ease;
+}
+
+.dem-dashboard-feature-section-info:hover {
+    background-color: #e0e0e0;
+}
+
+.dem-dashboard-feature-section-info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.dem-dashboard-feature-section-info p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Pie chart styles */
+.dem-pie-chart-container {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(14, 7, 7, 0.1);
+    padding: 20px; /* Add some padding around the chart */
+}
+
+.dem-pie-chart-container h5 {
+    text-align: center; /* Center align the chart title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+/* Table styles */
+.dem-table-container {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(14, 7, 7, 0.1);
+}
+
+.dem-table-summary-row {
+    background-color: #fafafa;
+}
+
+.dem-table-summary-header {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+.dem-table-summary-data {
+    padding: 10px;
+}
+
+.dem-table-summary-action {
+    padding: 10px;
+}
+
+.dem-table-summary-action button {
+    width: 100%;
+}
+
+/* Button styles */
+.MuiButton-root {
+    text-transform: none; 
+}
+
+/* Dialog styles */
+.MuiDialog-paper {
+    border-radius: 8px;
+}
+
+.dem-dialog-title {
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .dem-dashboard-feature-section-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dem-dashboard-feature-section-info {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Adjust pie chart container on small screens */
+    .dem-pie-chart-container {
+        width: 100%; /* Ensure full width on small screens */
+        padding: 10px; /* Less padding on smaller devices */
+        
+    }
+}

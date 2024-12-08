@@ -1,0 +1,582 @@
+/*----------------- NavBar ----------------*/
+.uam-navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 90px;
+}
+
+.uam-logo-container {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.uam-navbar-menu-container {
+  display: none;
+}
+.uam-navbar-primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: var(--dark-color);
+  color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.uam-navbar-links-container-links {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: var(--dark-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.uam-navbar-primary-button:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+.uam-navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .uam-navbar-links-container a {
+      margin-right: 1rem;
+      font-size: 1rem;
+  }
+  .uam-navbar-primary-button {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .uam-logo-container {
+      max-width: 140px;
+  }
+  .uam-navbar-links-container {
+      display: none;
+  }
+  .uam-navbar-menu-container {
+      display: flex;
+  }
+}
+
+
+/*----------------- Footer ----------------*/
+.uam-uam-footer-wrapper {
+  display: flex;
+  margin-top: 3rem;
+  padding: 3% 7% 5% 10%;
+  background-color: var(--secondary-color);
+}
+
+.uam-uam-footer-section-one {
+  max-width: 40%;
+}
+
+.uam-uam-footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.uam-uam-footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+}
+
+.uam-uam-footer-section-columns span {
+  margin: 0.25rem 0rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.uam-uam-footer-logo-text {
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+
+@media (max-width: 800px) {    
+  .uam-uam-footer-wrapper {
+      flex-direction: column;
+  }
+  .uam-uam-footer-section-two {
+      flex-direction: column;
+      margin-top: 2rem;
+  }
+  .uam-uam-footer-section-columns {
+      margin: 1rem 0rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .uam-uam-footer-wrapper {
+      flex-direction: column;
+  }
+  .uam-uam-footer-section-two {
+      flex-direction: column;
+      margin-top: 2rem;
+  }
+  .uam-uam-footer-section-columns {
+      margin: 1rem 0rem;
+  }
+}
+
+
+/*----------------- Dashboad ----------------*/
+.uam-container {
+  width: 80vw;
+  margin: 0rem auto;
+}
+
+.uam-header {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.uam-container h2{
+  margin-top: 2rem;
+}
+
+.uam-user-welcome {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.uam-main-heading {
+  margin-top: 3%;
+  margin-bottom: 4%;
+  font-size: clamp(1.5rem, 5vw, 1.9rem);
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.uam-summary-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.uam-summary-table-header {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.uam-summary-table-row {
+  height: 50px;
+}
+
+
+.uam-summary-table-data {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.uam-summary-table-action {
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 20%;
+}
+
+.uam-summary-table-button {
+  display: block;
+  width: 60%;
+  margin: auto;
+  padding: 5px 15px;
+  background-color: var(--dark-color);
+  color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.uam-summary-table-button:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+
+/*----------------- Web Form ----------------*/
+.uam-form-h2 {
+  text-align: center;
+  color: #543310;
+}
+
+.uam-form {
+  margin: auto;
+  width: 50%;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--dark-color);
+}
+
+.uam-sub-topic {
+  margin: auto;
+  width: 50%;
+  font-size: 1.5rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: #543310;
+}
+
+.uam-form-group {
+  margin-bottom: 15px;
+}
+
+.uam-form-label {
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 30%;
+  font-size: 1.1rem;
+  color: #543310;
+}
+
+.uam-form-label-2 {
+  display: flex;
+  margin-bottom: 5px;
+  width: 30%;
+  font-size: 1.1rem;
+  color: #543310;
+}
+
+.uam-form-input[type="text"],
+.uam-form-input[type="email"],
+.uam-form-input[type="date"],
+.uam-form-input[type="time"] {
+  width: 69%;
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: var(--white);
+}
+
+.uam-form-input-select {
+  width: 69%;
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: var(--white);
+}
+
+.uam-form-input-textarea {
+  width: 69%;
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: var(--white);
+}
+
+.uam-form-input-textarea-2 {
+  width: 99%;
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: var(--white);
+}
+
+.uam-form-input-select {
+  width: 69%;
+  padding: 10px;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: var(--white);
+}
+
+.uam-form-button {
+ 
+  width: 170px;
+  margin: 20px 0 20px 10px; 
+  padding: 8px;
+  background-color: #543310;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.uam-form-button-danger {
+  display: inline-block; 
+  width: 170px;
+  margin: 20px 0 20px 10px; 
+  padding: 8px;
+  background-color: #543310;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.uam-form-button:hover {
+  background-color: #74512D;
+}
+
+.uam-view-button {
+  display: block;
+  width: 30%;
+  margin-top: 2.5%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #543310;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.uam-view-button:hover {
+  background-color: #74512D;
+}
+
+.uam-table-link-button {
+  display: inline-block;
+  width: 45%;
+  margin-top: 2.5%;
+  margin-right: 0px;
+  margin-bottom: 3%;
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #543310;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.uam-table-link-button:hover {
+  background-color: #74512D;
+}
+
+.uam-table-negative-button {
+  display: inline-block;
+  width: 45%;
+  margin-top: 2.5%;
+  margin-bottom: 3%;
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #b61919;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.uam-table-negative-button:hover {
+  background-color: #ff4b4b;
+}
+
+.uam-button-box {
+  width: 65%;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.uam-button-box2 {
+  width: 80vw;
+  margin: 2rem auto;
+  padding-left: 50%;
+  justify-content: center;
+}
+
+.uam-button-box2 button {
+  width: 45%;
+  margin: 0 5% 0 0;
+}
+
+.form-divider {
+  width: 55%;
+  border: 0.05rem solid var(--accent-color);
+  margin: 2rem auto 2rem auto;
+}
+
+.form-divider-text {
+  font-size: 24px;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+
+/* Ticket count css */
+
+.uam-ticket-counts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.uam-ticket-count-box {
+  border: 1px solid #ccc;
+  border-radius: 3cap;
+  padding: 10px;
+  background-color: var(--primary-color);
+  text-align: center;
+  width: 30%; /* Adjust the width as needed */
+}
+
+.form-divider{
+  width: 52%;
+  border: 0.05rem solid var(--accent-color);
+  margin: 2rem auto 2rem auto;
+}
+
+.form-divider-text {
+  font-size: 24px;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.uam-chart-container {
+  width: 35%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.uam-search-container {
+  display: flex;
+  align-items: center; /* Aligns label and input vertically */
+  justify-content: flex-end; /* Aligns the contents to the right */
+  margin: 10px 0 10px auto; /* Adjusted top and bottom margin */
+  padding: 5px; /* Reduced padding around the box */
+  border: 1px solid #ced4da; /* Border for the container */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f8f9fa; /* Light background color */
+  width: 250px; /* Set a specific width for the container */
+}
+
+.uam-search-label {
+  margin-right: 2px; /* Reduced space between label and input */
+  font-size: 14px; /* Reduced font size for the label */
+  color: #495057; /* Label color */
+}
+
+.uam-search-input {
+  padding: 5px; /* Reduced padding inside the input */
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Reduced font size */
+  width: 100px; /* Adjust the width of the input as needed */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.uam-search-input:focus {
+  border-color: #80bdff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+
+.generate-pdf-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjusts the space between the button and the footer */
+}
+
+.generate-pdf-button {
+  background-color: #AF8F6F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.generate-pdf-button:hover {
+  background-color: #543310;
+}
+
+
+.uam-button-box {
+  width: 65%;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.uam-button-box2 {
+  width: 80vw;
+  margin: 2rem auto;
+  padding-left: 50%;
+  justify-content: center;
+}
+
+.uam-button-box2 button {
+  width: 45%;
+  margin: 0 5% 0 0;
+}
+
+.uam-form-divider {
+  width: 55%;
+  border: 0.05rem solid var(--accent-color);
+  margin: 2rem auto 2rem auto;
+}
+
+.uam-form-divider-text {
+  font-size: 24px;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.uam-button-box {  
+  width: 65%;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.uam-button-box2 {
+  width: 80vw;
+  margin: 2rem auto;
+  padding-left: 50%;
+  justify-content: center;
+}
+
+.uam-button-box2 button {
+  width: 45%;
+  margin: 0 5% 0 0; 
+}

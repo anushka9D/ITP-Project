@@ -1,0 +1,98 @@
+/* Root container to ensure styles apply only to the navbar */
+.FIN-payment-navbar-container {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the navbar itself */
+.FIN-payment-navbar-container .FIN-top-navbar {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0; /* Change to 'top: 0;' if you want the navbar at the top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+/* List styles for navigation */
+.FIN-payment-navbar-container .FIN-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Each navigation item */
+.FIN-payment-navbar-container .FIN-nav-item {
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Navigation link styling */
+.FIN-payment-navbar-container .FIN-nav-link {
+    text-decoration: none;
+    color: #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Icon styling inside navigation links */
+.FIN-payment-navbar-container .FIN-nav-link .nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+/* Active link styling */
+.FIN-payment-navbar-container .FIN-nav-item.active .FIN-nav-link {
+    color: #000;
+}
+
+/* Active indicator for active navigation item */
+.FIN-payment-navbar-container .FIN-nav-item.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #d97337; /* Color for the active indicator */
+    margin-top: 4px;
+}
+
+/* Ensure the navbar sticks to the top */
+.FIN-payment-navbar-container nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it has a high z-index to be on top of other elements */
+    background-color: #f8f8f8; /* Background color for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for elevation */
+    width: 40px;
+    height: 60px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .FIN-payment-navbar-container .FIN-top-navbar {
+        padding: 15px;
+    }
+
+    .FIN-payment-navbar-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .FIN-payment-navbar-container .FIN-nav-list li {
+        font-size: 0.9rem;
+    }
+
+    .FIN-payment-navbar-container .FIN-nav-link {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}

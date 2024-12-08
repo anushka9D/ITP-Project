@@ -1,0 +1,327 @@
+import './components_home/common.css';
+import './components_home/home.css';
+import './components_login/login.css';
+import './components_apm/appointment_management.css';
+import './components_sup/user_affairs.css';
+
+
+http://localhost:8070/appointmentmanager/add-appointment-manager
+
+{
+    "userId": "APM002",
+    "fName": "Dinuka",
+    "lName": "Rathnayake",
+    "nic": "123456789V",
+    "address": "No. 123 Main Street, Asgiriya, Gampaha",
+    "email": "dinuka.rathnayake@gmail.com",
+    "phoneNumber": "0771234567",
+    "education": "Diploma in Communication and Media Studies, GCE Advanced Level",
+    "password": "dinu123",
+    "createdDate": "2024/09/01",
+    "userStatus": "Active"
+}
+
+--------------------------------------------------------------------
+
+http://localhost:8070/legalcasemanager/add-legal-case-manager
+
+{
+    "userId": "LCM004",
+    "fName": "Yoshini",
+    "lName": "Jayasinghe",
+    "nic": "123456789V",
+    "address": "No. 123 Flower Street, Kaduwela",
+    "email": "yoshini.jayasinghe@gmail.com",
+    "phoneNumber": "0771234567",
+    "education": "LLB (Hons) Law - Sri Lanka",
+    "password": "yosh123",
+    "createdDate": "2024/09/04",
+    "userStatus": "Active"
+}
+
+--------------------------------------------------------------------
+
+http://localhost:8070/deedmanager/add-deed-manager
+
+{
+    "userId": "DEM003",
+    "fName": "Chaveen",
+    "lName": "Wijesinghe",
+    "nic": "123456789V",
+    "address": "No. 123 Flower Street, Kandy",
+    "email": "chaveen.wijesinghe@gmail.com",
+    "phoneNumber": "0771234567",
+    "education": "LLB (Hons) Law - Sri Lanka",
+    "password": "ch12",
+    "createdDate": "2024/09/14",
+    "userStatus": "Active"
+}
+
+
+--------------------------------------------------------------------
+
+http://localhost:8070/client/add-client
+
+{
+    "userId": "CLI002",
+    "fname": "Enith",
+    "lname": "Samarasinghe",
+    "nic": "123456789V",
+    "address": "No. 123 Flower Street, Gampaha",
+    "district": "Gampaha",
+    "province": "Western",
+    "email": "enith.samarasinghe@gmail.com",
+    "phone": "0771234567",
+    "password": "enith",
+    "createdDate": "2024/09/01",
+    "userStatus": "Active"
+}
+
+--------------------------------------------------------------------
+
+http://localhost:8070/appointmentrequest/add-appointment-request
+http://localhost:8070/appointmentrequest/update-appointment-request/APR0001
+http://localhost:8070/appointmentrequest/delete-appointment-request/APR0001
+
+{
+    "appointmentRequestId": "APR0001",
+    "appointmentRequestName": "Initial Consultation",
+    "appointmentRequestDate": "2024-10-04",
+    "appointmentRequestStatus": "Pending",
+    "lawyerId": "LCM004",
+    "clientId": "CLI002",
+    "appointmentType": "Consultation",
+    "appointmentDate": "2024-10-10",
+    "appointmentTime": "10:00 AM",
+    "appointmentLocation": "Meeting Room 1"
+}
+
+{
+    "appointmentRequestId": "APR0001",
+    "appointmentRequestName": "Legal Consultation",
+    "appointmentRequestDate": "2024-10-04",
+    "appointmentRequestStatus": "Completed",
+    "lawyerId": "LCM004",
+    "clientId": "CLI002",
+    "appointmentType": "Consultation",
+    "appointmentDate": "2024-10-10",
+    "appointmentTime": "10:00 AM",
+    "appointmentLocation": "Meeting Room 1"
+}
+
+--------------------------------------------------------------------
+http://localhost:8070/appointment/add-appointment
+
+{
+    "appointmentId": "AP001",
+    "appointmentRequestId": "APR0001",
+    "appointmentManagerId": "APM002",
+    "lawyerId": "LCM004",
+    "clientId": "CLI002",
+    "appointmentTitle": "Legal Consultation",
+    "appointmentDescription": "Initial legal consultation regarding property dispute.",
+    "discussedPoints": "Land ownership documents, legal procedures for settlement.",
+    "agreedPayment": "Rs. 25,000",
+    "requestedDocuments": "Land Deed", "Proof of Identity",
+    "nextAppointmentDate": "2024-11-15",
+    "appointmentStatus": "Pending"
+}
+
+
+-------------------------------------------------
+http://localhost:8070/attorneymanager/add-attorney-manager
+
+{
+    "userId": "ATM001",
+    "fName": "Shehara",
+    "lName": "Manathunga",
+    "nic": "200223789V",
+    "address": "No. 123 Main Street, Asgiriya, Kandy",
+    "email": "shehara.manathunga@gmail.com",
+    "phoneNumber": "0741234567",
+    "education": "LLB (Hons) Law - Sri Lanka",
+    "password": "rash456",
+    "createdDate": "2024/09/04",
+    "userStatus": "Active"
+}
+
+-------------------------------------------------------
+http://localhost:8070/documentmanager/add
+
+{
+    "userId": "DCM001",
+    "fName": "Anushka",
+    "lName": "Dilshan",
+    "nic": "1999223789V",
+    "address": "No. 123 Main Street, Asgiriya, Malabe",
+    "email": "anushka.dilshan@gmail.com",
+    "phoneNumber": "0741234567",
+    "education": "LLB (Hons) Law - Sri Lanka",
+    "password": "ad456",
+    "createdDate": "2024/09/10",
+    "userStatus": "Active"
+}
+
+
+----------------------------------------------------------
+http://localhost:8070/financemanager/add
+
+{
+    "userId": "FIN002",
+    "fName": "Charitha",
+    "lName": "Wickramanayake",
+    "nic": "2002223789V",
+    "address": "No. 123 Main Street, Matara",
+    "email": "charitha.wickramanayake@gmail.com",
+    "phoneNumber": "0741234567",
+    "education": "B.Sc Finance, MAAT",
+    "password": "ch123",
+    "createdDate": "2024/09/16",
+    "userStatus": "Active"
+}
+
+
+--------------------------------------------------------------
+http://localhost:8070/supportticket/add-support-ticket
+
+{
+  "supTicketDate": "2024-10-07T15:30:00.000+00:00",
+  "userType": "Customer",
+  "clientId": "CLI002",
+  "supTicketType": "Billing Issue",
+  "supTicketEmail": "customer@example.com",
+  "supFormPhone": "+9876543210",
+  "supTicketSubject": "Incorrect billing amount",
+  "supTicketMsg": "I was charged an incorrect amount on my last bill.",
+  "supTicketStatus": "Pending"
+}
+
+{
+  "supTicketDate": "2024-10-08T09:15:00.000+00:00",
+  "userType": "Admin",
+  "clientId": "CLI002",
+  "supTicketType": "Account Access",
+  "supTicketEmail": "admin@example.com",
+  "supFormPhone": "+1112223334",
+  "supTicketSubject": "Unable to access admin panel",
+  "supTicketMsg": "I am unable to log in to the admin panel.",
+  "supTicketStatus": "Pending"
+}
+
+{
+  "supTicketDate": "2024-10-09T12:45:00.000+00:00",
+  "userType": "Developer",
+  "clientId": "CLI002",
+  "supTicketType": "Technical Support",
+  "supTicketEmail": "developer@example.com",
+  "supFormPhone": "+5556667778",
+  "supTicketSubject": "Error in application",
+  "supTicketMsg": "I am encountering an error when trying to use the application.",
+  "supTicketStatus": "Pending"
+}
+
+{
+  "supTicketDate": "2024-10-10T17:20:00.000+00:00",
+  "userType": "Manager",
+  "clientId": "CLI002",
+  "supTicketType": "Feature Request",
+  "supTicketEmail": "manager@example.com",
+  "supFormPhone": "+9998887776",
+  "supTicketSubject": "Request for new feature",
+  "supTicketMsg": "I would like to request a new feature to be added to the application.",
+  "supTicketStatus": "Pending"
+}
+
+----------
+{
+  "supTicketDate": "2024-10-11T08:30:00.000+00:00",
+  "userType": "Customer",
+  "clientId": "CLI002",
+  "supTicketType": "Billing Issue",
+  "supTicketEmail": "customer@example.com",
+  "supFormPhone": "+9876543210",
+  "supTicketSubject": "Incorrect billing amount",
+  "supTicketMsg": "I was charged an incorrect amount on my last bill.",
+  "supTicketStatus": "Replied"
+}
+
+{
+  "supTicketDate": "2024-10-12T13:15:00.000+00:00",
+  "userType": "Admin",
+  "clientId": "CLI002",
+  "supTicketType": "Account Access",
+  "supTicketEmail": "admin@example.com",
+  "supFormPhone": "+1112223334",
+  "supTicketSubject": "Unable to access admin panel",
+  "supTicketMsg": "I am unable to log in to the admin panel.",
+  "supTicketStatus": "Replied"
+}
+
+{
+  "supTicketDate": "2024-10-13T16:45:00.000+00:00",
+  "userType": "Developer",
+  "clientId": "CLI002",
+  "supTicketType": "Technical Support",
+  "supTicketEmail": "developer@example.com",
+  "supFormPhone": "+5556667778",
+  "supTicketSubject": "Error in application",
+  "supTicketMsg": "I am encountering an error when trying to use the application.",
+  "supTicketStatus": "Replied"
+}
+
+
+----------------------------------------------
+http://localhost:8070/replyticket/add-reply-ticket
+
+{
+  "supportTicketId": "67045dbd3153c28f0206b2a7",
+  "replyTicketDate": "2024-10-14T10:00:00.000+00:00",
+  "userType": "Customer",
+  "clientId": "CLI002",
+  "supAgentId": "SUP001",
+  "replyTicketMsg": "I am still having issues with my account.",
+  "replyTicketStatus": "In Progress"
+}
+
+{
+  "supportTicketId": "67045dc53153c28f0206b2a9",
+  "replyTicketDate": "2024-10-15T15:30:00.000+00:00",
+  "userType": "Admin",
+  "clientId": "CLI002",
+  "supAgentId": "SUP001",
+  "replyTicketMsg": "I will look into this issue and get back to you as soon as possible.",
+  "replyTicketStatus": "In Progress"
+}
+
+{
+  "supportTicketId": "67045dce3153c28f0206b2ab",
+  "replyTicketDate": "2024-10-16T12:15:00.000+00:00",
+  "userType": "Developer",
+  "clientId": "CLI002",
+  "supAgentId": "SUP001",
+  "replyTicketMsg": "I have identified the issue and am working on a solution.",
+  "replyTicketStatus": "In Progress"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

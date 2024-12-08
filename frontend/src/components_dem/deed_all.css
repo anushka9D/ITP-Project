@@ -1,0 +1,84 @@
+
+.all-deed body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Table Container */
+.dem-table-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dem-table-main-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #36200a;
+}
+
+/* Table styles */
+.dem-table-summary {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dem-table-summary-row {
+    background-color: #fafafa;
+}
+
+.dem-table-summary-header {
+    font-weight: bold;
+    background-color: #e0e0e0;
+    padding: 12px;
+}
+
+.dem-table-summary-data {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Action button styles */
+.dem-table-summary-action button {
+    background-color: #74512D;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.dem-table-summary-action button:hover {
+    background-color: #5a3d23; /* Darker shade on hover */
+}
+
+.dem-table-summary-action button:focus {
+    outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .dem-table-summary-header, 
+    .dem-table-summary-data {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+
+    .dem-table-summary-action button {
+        padding: 6px 10px; /* Adjust button size on mobile */
+        font-size: 14px;
+    }
+}
+
+.dem-table-main-heading-2{
+    text-align:left;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #36200a;
+}

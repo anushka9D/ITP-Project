@@ -1,0 +1,99 @@
+/* Root CSS Variables */
+.FIN-payment-proof-form {
+    --primary-color: #985516; /* 60% - Dominant color (Blue) */
+    --secondary-color: #2ecc71; /* 30% - Secondary color (Green) */
+    --accent-color: #e74c3c; /* 10% - Accent color (Red) */
+    --text-color: #2c3e50; /* Text color */
+    --input-bg-color: #ecf0f1; /* Input background color */
+    --border-radius: 8px; /* Global border radius */
+    --transition-speed: 0.3s; /* Global transition speed */
+}
+
+.FIN-payment-proof-form body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f7;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.FIN-payment-proof-form .FIN-form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.FIN-payment-proof-form h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.FIN-payment-proof-form .FIN-form-group {
+    margin-bottom: 15px;
+}
+
+.FIN-payment-proof-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.FIN-payment-proof-form input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--input-bg-color);
+    border: 1px solid #bdc3c7;
+    border-radius: var(--border-radius);
+    transition: border-color var(--transition-speed);
+}
+
+.FIN-payment-proof-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.FIN-payment-proof-form .FIN-calendar-icon {
+    margin-left: 10px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.FIN-payment-proof-form .FIN-submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.FIN-payment-proof-form .FIN-submit-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.FIN-payment-proof-form .FIN-submit-button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .FIN-payment-proof-form .FIN-form-container {
+        padding: 15px;
+    }
+
+    .FIN-payment-proof-form h1 {
+        font-size: 1.5rem;
+    }
+}

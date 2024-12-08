@@ -1,0 +1,690 @@
+/*lcm dashboard*/
+.lcm-dashboard-container {
+    width: 100%;
+    
+    padding: 20px;
+    background-color: var(--background-color);
+    max-width: 6200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-links-container-link {
+  margin-right: 1.2rem;
+  text-decoration: none;
+  color: var(--dark-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.lcm-dashboard-headline {
+  margin-top: 10px;
+  font-size: 28px;
+  color: var(--dark-color);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/* Styles for the subheading */
+.lcm-dashboard-subhead {
+  font-size: 21px; 
+  font-weight: bold;
+  margin-bottom: 10px; 
+  color: var(--dark-color); 
+  margin-left: 70px;
+}
+/* Table Styles */
+.lcm-dashboard-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+
+}
+
+.lcm-dashboard-th, td {
+  padding: 7px;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  font-size: 15px;
+  
+}
+
+.lcm-dashboard-th {
+  background-color: var(--secondary-color) ;
+  font-size: 15px;
+}
+
+.lcm-dashboard-box {
+  height: 130px;
+  width: 290px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex; 
+  align-items: center; 
+  transition: transform 0.2s; 
+}
+
+.lcm-dashboard-box:hover {
+  transform: translateY(-4px); 
+}
+
+.lcm-dashboard-box span {
+  margin-left: 18px; 
+  font-size: 35px;
+  margin-bottom:20px ;
+  margin-right: 70px;
+  
+  
+}
+/* Optional: Style icons for uniform size */
+.lcm-dashboard-box svg {
+  width: 60px; 
+  height: 60px; 
+  margin-left: 30px; 
+  margin-top: 10px;
+  color: rgb(75, 27, 0);
+}
+.lcm-dashboard-table-container{
+  margin-top: 70px;
+}
+.lcm-dashboard-search-bar {
+  padding: 8px;
+  margin-right: 10px;
+  height: 50px;
+  width: 350px;
+}
+.lcm-dashboard-chart-container {
+  width: 50%;
+  margin: 20px ; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px black; 
+}
+.case-piechart-container{
+  width: 50%;
+  padding-top: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px black; 
+}
+
+.lcm-dashboard-table-container {
+  width: 100%;
+  margin: 20px auto; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.lcm-dashboard-all-chart-container{
+  display: flex;              
+  padding: 15px;
+}
+/* View button styling with icon */
+.btn-btn-view-case{
+  background-color:var(--dark-color);
+  color: #fff; 
+  padding: 5px ;
+  border: none;
+  width: 90px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+}
+/* Add New Case button styling */
+.btn-btn-add-new-case {
+  background-color: #01360d; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 6;
+ margin-right: 10px;
+}
+
+.btn-btn-view-previous-case {
+  background-color: #01354d; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.lcm-button-container {
+  display: flex;
+  margin-top: 31x;
+  margin-left: 70px;
+}
+.count-button-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 20px; 
+
+}
+.add-viewprevious-case-container{
+  margin-left: 420px;
+}
+
+/*----------------------------------------lcm-addcase------------------------------*/
+
+.lcm-addcase-container-add {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.radio-group {
+  display: flex;
+  content: normal;
+  margin-top: 20px;margin-bottom: 20px;
+}
+
+.radio-group label {
+  background-color: var(--background-color);
+  padding: 5px 10px; 
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--dark-color); 
+  margin: 0 5px ; 
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  background-color: var(--dark-color);
+  color: var(--white);
+}
+
+.lcm-addcase-case-title{
+  text-align: center;
+  color:  var(--dark-color);
+  margin-bottom: 10px;
+}
+.lcm-addcase-form-submit{
+  background-color: rgb(23, 23, 252);
+    padding: 10px 12px; 
+    border-radius: 10px;
+    color: wheat; 
+    margin-top: 10px;
+    font-size: medium;
+    border: none;
+    margin-right: 10px;
+}
+.lcm-addcase-buttons {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.lcm-addcase-submit, .lcm-add_new_client{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--secondary-color); 
+  margin-left: 10px; 
+}
+
+.lcm-addcase-submit, .lcm-add_new_client:hover{
+  background-color: var(--dark-color);
+}
+.form-group.search_ label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group.search_ input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Form Styles */
+.form-body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    font-size: 4px;
+}
+.lcm-addcase-case-type{
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--dark-color); 
+}
+
+.lcm-addcase-form-group input,
+.lcm-addcase-form-group select,
+.lcm-addcase-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="date"] {
+    padding: 8px;
+}
+
+/*--------------------------------case report----------------------------------*/
+.cdetails-container {
+  max-width: 800px;
+  border: 1px solid #000; 
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.cdetails-report-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cdetails-company-logo {
+  width: 100px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.cdetails-company-name {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.cdetails-company-contact {
+  font-size: 14px;
+  color: #555;
+}
+
+.cdetails-report-separator {
+  border: 2px solid rgb(63, 63, 63);
+  margin: 20px 0 20px;
+  width: 100%;
+}
+
+.cdetails-card-report p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.cdetails-case-number-label {
+  margin-bottom: 15px; 
+}
+
+.cdetails-case-number-label-yellow {
+  background-color: yellow; /* Yellow background */
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  font-weight: bold; 
+  margin-right: 10px; 
+}  
+.advanced-report-section {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.advanced-report-section h3 {
+  color: #2c3e50;
+}
+
+.advanced-report-section h4 {
+  color: #34495e;
+  margin-top: 10px;
+}
+
+.advanced-report-section p {
+  line-height: 1.6;
+  color: #fa2f14;
+}
+.advanced-report-section {
+  margin-top: 30px;
+}
+
+.advanced-report-section h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+
+.advanced-report-section h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+} 
+.gen-report-button-container {
+  display: flex;              
+  justify-content: flex-end; 
+  margin-top: 20px;          
+}
+
+.gen-report-cdetails-btn {
+  background-color: #007BFF; 
+  color: white;              
+  padding: 10px 20px;       
+  border: none;              
+  border-radius: 5px;       
+  cursor: pointer;           
+}
+
+/*------------------------case detalis-----------------------*/
+.casedetails-show-container {
+  padding: 20px; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.all-report-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #424242;
+}
+.cdetails-status-banner {
+  background-color: #333; 
+  color: white; 
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+.casedetails-show-card {
+  margin-bottom: 20px; 
+  padding: 15px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #ffffff; 
+}
+.casedetails-show-card2 {
+  margin-bottom: 20px; 
+  padding: 15px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #ffffff; 
+}
+
+.casedetails-show-sub-card {
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-bottom: 15px; 
+  flex: 1; 
+margin-right: 20px; 
+}
+
+.casedetails-show-field {
+  flex: 1; 
+  min-width: 200px; 
+  margin-right: 20px; 
+  margin-bottom: 10px; 
+}
+.casedetails-show-label {
+  font-weight: bold; 
+  margin-bottom: 5px; 
+  display: block; 
+  font-weight: 460;
+  font-size: 16px;
+}
+.casedetails-show-data {
+  font-size: 14px; 
+  color: #333; 
+}
+
+.casedetails-show-data-text {
+  width: 100%; 
+  height: 100px; 
+  border: 1px solid #ffffff; 
+  border-radius: 4px; 
+  padding: 10px;
+  resize: none; 
+  background-color: #ffffff; 
+}
+.needed-documents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+.needed-documents-document-badge {
+  background-color: #66ff66; 
+  color: #000; 
+  padding: 8px 12px; 
+  border-radius: 12px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  font-weight: bold; 
+  display: inline-block;
+}
+
+.casedetails-show-btn-edit {
+  background-color: #05810b;
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.casedetails-show-btn-edit:hover {
+  background-color: #45a049; 
+}
+
+/*------------------------------------client dashboard--------------*/
+
+.client-cdetails-container {
+   
+  align-items: center;
+  max-width: 900px;
+  margin-left: 350px; 
+}
+.cli-important{
+  color: red;
+}
+.client-case-card {
+border: 1px solid #ccc;
+padding: 20px;
+margin-bottom: 30px;
+position: relative;
+width: 80%; 
+font-size: 14px; 
+background-color: #fff;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+border-radius: 10px; 
+
+}
+.client-case-card:hover {
+  transform: perspective(1000px) rotateX(0deg); 
+}
+
+
+.client-cdetails-entry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-cdetails-left,
+.client-cdetails-right {
+  width: 45%;
+}
+.client-intro-paragraph {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-size: 13px;
+  color: #333;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px;
+}
+.client-case-label {
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Headings */
+.cdetails-report-title{
+  color: var(--dark-color);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+
+.client-case-bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: green; 
+}
+.client-important-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/*-----------------------previous case details-----------------------*/
+.previous-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 10px;
+  
+}
+.casedetails-show-btn {
+  background-color: #833b00;
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.casedetails-show-btn:hover {
+  background-color:#c26315; 
+}
+.casedetails-show-btn-delete {
+  background-color: #c21306;
+}
+
+.casedetails-show-btn-delete:hover {
+  background-color: #da190b; 
+}
+
+/*--------------------------case update-----------------------*/
+.lcm-container-update {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.update-mark-complete{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--accent-color); 
+  margin-left: 10px; 
+}
+.update-case-submit{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--secondary-color); 
+  margin-left: 10px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  
+
+  
+
+

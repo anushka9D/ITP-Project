@@ -1,0 +1,80 @@
+/* Root class for the entire component */
+.FIN-delete-proof-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f4e1; /* Soft light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Heading styling */
+.FIN-delete-proof-container h1 {
+    color: #74512d; /* Rich brown */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table styling */
+.FIN-delete-proof-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.FIN-delete-proof-container td {
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #2c3e50;
+    border-bottom: 1px solid #bdc3c7;
+    text-align: left;
+}
+
+/* Table header cells */
+.FIN-delete-proof-container td:first-child {
+    font-weight: 600;
+    color: #74512d; /* Rich brown */
+}
+
+/* Button styling */
+.FIN-delete-proof-container .MuiButton-containedSecondary {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c; /* Red for delete button */
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Button hover effect */
+.FIN-delete-proof-container .MuiButton-containedSecondary:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .FIN-delete-proof-container {
+        padding: 15px;
+    }
+
+    .FIN-delete-proof-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .FIN-delete-proof-container td {
+        font-size: 0.9rem;
+    }
+
+    .FIN-delete-proof-container .MuiButton-containedSecondary {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

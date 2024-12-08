@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+
+:root {
+  --white: white;
+  --background-color: #f6f6f6;
+  --primary-color: #F8F4E1;
+  --secondary-color: #afa66f;
+  --accent-color: #74512D;
+  --dark-color: #544010;
+}
+
+.ATM_body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
+
+.ATM_top-navbar {
+  width: 100%;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.ATM_nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.ATM_nav-item {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.ATM_nav-link {
+  text-decoration: none;
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.ATM_nav-link .nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.ATM_nav-item.ATM_active .ATM_nav-link {
+  color: var(--accent-color);
+}
+
+.ATM_nav-item.ATM_active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  margin-top: 4px;
+}

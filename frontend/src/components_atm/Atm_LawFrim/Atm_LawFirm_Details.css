@@ -1,0 +1,86 @@
+/* Styling for the law firm details table */
+.ATM_table-container {
+  width: 80%;
+  margin: 150px auto 20px;
+  font-size: 1.1em;
+  position: relative; /* Important for the absolute positioning of the back button */
+}
+
+/* Styling for the back button */
+.ATM_back-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--dark-color);
+  cursor: pointer;
+  position: absolute;
+  top: -40px; /* Adjust this value to position the arrow above the heading */
+  left: 0; /* Align the button on the left side */
+  padding: 5px;
+}
+
+.ATM_back-button:hover {
+  color: var(--accent-color);
+}
+
+/* Create space between the arrow and the title */
+.ATM_spacer {
+  height: 20px; /* Creates a blank line */
+}
+
+/* Table styling */
+.ATM_lawfirm-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.ATM_lawfirm-table th,
+.ATM_lawfirm-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.ATM_lawfirm-table thead tr {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.ATM_lawfirm-table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+/* Button styling */
+.ATM_update-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+}
+
+.ATM_update-button:hover {
+  background-color: #23272b;
+}
+
+/* Error message styling */
+.ATM_error-message {
+  color: red;
+  font-size: 1.1em;
+  margin: 20px 0;
+}
+
+/* Responsive table for small screens */
+@media screen and (max-width: 768px) {
+  .ATM_lawfirm-table {
+    font-size: 0.9em;
+  }
+
+  .ATM_button {
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,79 @@
+/* Root div class for the entire component */
+.FIN-payment-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f4e1; /* Soft light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Heading style */
+.FIN-payment-details-container h1 {
+    color: #74512d; /* Rich brown */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table styling */
+.FIN-payment-details-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+/* Table cell styling */
+.FIN-payment-details-container td {
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #2c3e50;
+    border-bottom: 1px solid #bdc3c7;
+    text-align: left;
+}
+
+/* Table header cells */
+.FIN-payment-details-container td strong {
+    font-weight: 600;
+    color: #74512d; /* Rich brown */
+}
+
+.FIN-payment-details-container .MuiButton-containedPrimary {
+    width: 100%;
+    padding: 12px;
+    background-color: #d9534f; 
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.FIN-payment-details-container .MuiButton-containedPrimary:hover {
+    background-color: #c9302c; 
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .FIN-payment-details-container {
+        padding: 15px;
+    }
+
+    .FIN-payment-details-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .FIN-payment-details-container td {
+        font-size: 0.9rem;
+    }
+
+    .FIN-payment-details-container .MuiButton-containedPrimary {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

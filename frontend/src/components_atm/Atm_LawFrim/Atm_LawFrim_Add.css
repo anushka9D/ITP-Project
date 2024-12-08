@@ -1,0 +1,74 @@
+*.ATM_ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+
+:root {
+  --white: white;
+  --background-color: #f6f6f6;
+  --primary-color: #F8F4E1;
+  --secondary-color: #afa66f;
+  --accent-color: #74512D;
+  --dark-color: #544010;
+}
+
+.ATM_body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
+
+.ATM_form-container {
+  background-color: var(--primary-color);
+  width: 50%;
+  margin: 150px auto; /* Adds space for the navbar and centers the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ATM_h2 {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.ATM_form-group {
+  margin-bottom: 15px;
+}
+
+.ATM_label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--dark-color);
+}
+
+.ATM_input[type="text"], .ATM_input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+.ATM_button {
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.ATM_button:hover {
+  background-color: var(--dark-color);
+}
+
+.ATM_form-group input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}

@@ -1,0 +1,211 @@
+/* Root CSS Variables */
+:root {
+    --white: white;
+    --background-color: #f6f6f6; /* Light background */
+    --primary-color: #F8F4E1; /* Soft light primary color */
+    --secondary-color: #afa66f; /* Light gold secondary color */
+    --accent-color: #74512D; /* Rich brown accent */
+    --dark-color: #544010; /* Deep brown */
+    --text-color: #2C3E50; /* Deep blue-gray for text */
+    --border-radius: 8px; /* Global border radius */
+    --transition-speed: 0.3s; /* Global transition speed */
+}
+
+/* Body and General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Dashboard Container */
+.FIN-dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.FIN-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.FIN-dashboard-header h5 {
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+/* Navigation and Buttons */
+.FIN-nav-actions .FIN-support-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: 600;
+    margin-right: 10px;
+    transition: background-color var(--transition-speed);
+}
+
+.FIN-nav-actions .FIN-support-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.FIN-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.FIN-user-info span {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.FIN-logout-btn {
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-weight: 600;
+    transition: background-color var(--transition-speed);
+}
+
+.FIN-logout-btn:hover {
+    background-color: var(--dark-color);
+}
+
+/* Metrics Cards */
+.FIN-metrics-container .MuiCard-root {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-speed);
+}
+
+.FIN-metrics-container .MuiCard-root:hover {
+    transform: translateY(-5px);
+}
+
+.FIN-metrics-container .MuiTypography-h6 {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.FIN-metrics-container .MuiTypography-h5 {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Section Titles */
+.FIN-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* Container for the table title and search bar */
+.FIN-table-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Adds space below the section header */
+}
+
+/* Search Container Styling */
+.FIN-search-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns search bar to the right */
+}
+
+/* Styling for Search Input */
+.FIN-search-input {
+    max-width: 300px; /* Optional: Limit the width of the search bar */
+}
+
+/* Center text within the search input */
+.FIN-search-input .MuiInputBase-input {
+    text-align: center; /* Centers the text within the input box */
+}
+
+/* Custom Table Styling */
+.FIN-custom-table .MuiTableCell-root {
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.FIN-custom-table .MuiTableCell-root:first-child {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.FIN-custom-table .MuiButton-containedPrimary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: 600;
+    transition: background-color var(--transition-speed);
+}
+
+.FIN-custom-table .MuiButton-containedPrimary:hover {
+    background-color: var(--accent-color);
+}
+
+.FIN-custom-table .MuiTableRow-root:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .FIN-dashboard-container {
+        padding: 15px;
+    }
+
+    .FIN-metrics-container {
+        margin-bottom: 30px;
+    }
+
+    .FIN-section-title {
+        font-size: 1.2rem;
+    }
+
+    .FIN-custom-table .MuiTableCell-root {
+        font-size: 0.9rem;
+    }
+
+    .FIN-custom-table .MuiButton-containedPrimary {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Fin Pie Chart Container */
+.FIN-pie-chart-container {
+    margin: 20px 0;
+    text-align: center;
+
+    max-width: 400px; /* Control the size of the pie chart */
+    margin: 0 auto; /* Center the chart */
+}
+
+/* Generate Report Button */
+.FIN-generate-report-btn {
+    background-color: #8B4513; /* New color: SaddleBrown (or any other color you prefer) */
+    color: white; /* Text color */
+    margin-left: auto; /* Move button to the right */
+    display: block; /* Ensure the button is treated as a block element */
+    padding: 10px 20px; /* Adjust padding for button size */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    text-align: right; /* Align the button to the right */
+    max-width: fit-content; /* Prevent the button from stretching too wide */
+}
+
+/* Optional hover effect */
+.FIN-generate-report-btn:hover {
+    background-color: #6B3A1A; /* Slightly darker shade for hover */
+}

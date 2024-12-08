@@ -1,0 +1,86 @@
+.fin-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+h2 {
+    color: #B8860B;
+    margin-bottom: 30px;
+}
+
+.fin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.fin-table th, .fin-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.fin-table th {
+    background-color: #f2f2f2;
+}
+
+.fin-btn-container {
+    margin-top: 20px;
+}
+
+.fin-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.fin-btn-red {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.fin-btn-blue {
+    background-color: #7d6017;
+    color: #fff;
+}
+
+.fin-error {
+    color: red;
+    font-weight: bold;
+}
+
+.fin-btn-payment {
+    background-color: rgb(83, 130, 12);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 380px;
+}
+
+.fin-client-display-container {
+    margin-top: 80px;
+}
+
+.fin-btn-view {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.fin-btn-view:hover {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,212 @@
+/*----------------- NavBar ----------------*/
+.dem-home-navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  min-height: 90px;
+  background-color: var(--secondary-color);
+}
+
+.dem-logo-container a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.dem-logo-container p {
+  color: var(--dark-color); 
+  font-size: 4rem;
+  font-weight: 600;
+  margin-right: 5rem;
+}
+.dem-home-navBar
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+}
+.dem-home-navBar
+.navbar-menu-container {
+  display: none;
+}
+.dem-home-navBar
+.navbar-primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: var(--dark-color);
+  color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.dem-home-navBar
+.navbar-links-container-links {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: var(--dark-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.dem-home-navBar
+.navbar-primary-button:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+.dem-home-navBar
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .dem-home-navBar
+  .navbar-links-container-links {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .dem-home-navBar
+  .navbar-primary-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .dem-logo-container {
+    font-size: 3rem;
+  }
+  .dem-home-navBar
+  .navbar-links-container {
+    display: none;
+  }
+  .dem-home-navBar
+  .navbar-menu-container {
+    display: flex;
+  }
+}
+
+/*----------------- Subnavbar ----------------*/
+
+.subnav-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.subnav-link {
+  margin-left: 40px;
+  color: #36200a;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.subnav-container
+.link-container{
+  margin-left: 0px;
+}
+
+/* Search bar container */
+.subnav-container
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 500px;
+}
+.subnav-container
+.subnav-search {
+  padding: 0px 5px;
+  padding-left: 30px; 
+  margin-right: 10px;
+  font-size: 1rem;
+  border: 2px solid #36200a;
+  border-radius: 4px;
+  width: 400px;
+}
+.subnav-container
+.search-icon {
+  left: 10px;
+  color: #36200a;
+  cursor: pointer;
+}
+
+
+/*----------------- Footer ----------------*/
+
+.dem-footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 3% 7% 5% 10%;
+  background-color: var(--secondary-color);
+}
+.dem-footer-wrapper
+.footer-section-one {
+  max-width: 40%;
+}
+.dem-footer-wrapper
+.footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.dem-footer-wrapper
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+}
+.dem-footer-wrapper
+.footer-section-columns span {
+  margin: 0.25rem 0;
+  font-weight: 600;
+  color: var(--dark-color);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.dem-footer-wrapper
+.footer-section-columns span:hover {
+  color: var(--primary-color);
+}
+.dem-footer-wrapper
+.footer-logo-text {
+  font-size: 1rem;
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+
+  .dem-footer-wrapper {
+    flex-direction: column;
+    padding: 5% 10%;
+  }
+  .dem-footer-wrapper
+  .footer-section-one {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  .dem-footer-wrapper
+  .footer-section-two {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dem-footer-wrapper
+  .footer-section-columns {
+    margin: 1rem 0;
+    width: 100%;
+  }
+}

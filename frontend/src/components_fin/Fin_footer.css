@@ -1,0 +1,58 @@
+/*----------------- Footer ----------------*/
+.FIN-footer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 7% 5% 10%;
+    background-color: #f8f4e1; /* Light primary color for the footer background */
+    position: relative;
+    bottom: 0;
+}
+
+.FIN-footer-section-one {
+    max-width: 40%;
+}
+
+.FIN-footer-section-two {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.FIN-footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    min-width: 190px;
+}
+
+.FIN-footer-section-columns span {
+    margin: 0.25rem 0rem;
+    font-weight: 600;
+    color: #74512D; /* Rich brown color for text */
+    cursor: pointer;
+}
+
+.FIN-footer-logo-text {
+    font-size: 1rem;
+    color: #74512D; /* Rich brown color for logo text */
+}
+.FIN-logo-container{
+    size: 45px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .FIN-footer-wrapper {
+        flex-direction: column;
+        padding: 5% 5%; /* Adjust padding for smaller screens */
+    }
+
+    .FIN-footer-section-two {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .FIN-footer-section-columns {
+        margin: 1rem 0rem;
+    }
+}

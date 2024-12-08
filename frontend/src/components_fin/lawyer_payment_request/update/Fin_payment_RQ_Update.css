@@ -1,0 +1,117 @@
+/* Root CSS Variables */
+:root {
+    --primary-color: #F8F4E1; /* Soft light primary color */
+    --secondary-color: #74512D; /* Rich brown accent color */
+    --input-bg-color: #fafafa; /* Input background color */
+    --input-border-color: #ccc; /* Input border color */
+    --button-bg-color: #74512D; /* Button background color */
+    --button-hover-bg-color: #5b3d20; /* Button hover background color */
+    --success-color: #28a745; /* Success message color */
+    --font-color: #2C3E50; /* Main font color */
+    --font-family: 'Roboto', sans-serif; /* Global font */
+    --border-radius: 8px; /* Border radius for form elements */
+    --transition-speed: 0.3s; /* Transition speed for hover effects */
+}
+
+/* General styling for form container */
+.FIN-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family);
+}
+
+/* Page heading */
+.FIN-update-heading {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form group styling */
+.FIN-form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 600;
+    color: var(--font-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    color: var(--font-color);
+    transition: border-color var(--transition-speed);
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(116, 81, 45, 0.5);
+}
+
+/* Submit button styling */
+.FIN-submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--button-bg-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.FIN-submit-button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Success message */
+.FIN-success-message {
+    background-color: var(--success-color);
+    color: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+}
+
+/* Calendar icon styling */
+.FIN-calendar-icon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .FIN-form-container {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .FIN-update-heading {
+        font-size: 1.8rem;
+    }
+
+    .FIN-submit-button {
+        font-size: 0.9rem;
+    }
+}

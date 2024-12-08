@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.FIN-top-navbar {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0; /* Use 'top: 0;' if you want the navbar at the top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FIN-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+}
+
+.FIN-nav-item {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.FIN-nav-link {
+    text-decoration: none;
+    color: #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.FIN-nav-link .FIN-nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.FIN-nav-item.active .FIN-nav-link {
+    color: #000;
+}
+
+.FIN-nav-item.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #d97337; /* Color for the active indicator */
+    margin-top: 4px;
+}

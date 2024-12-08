@@ -1,0 +1,108 @@
+/* Global styles */ 
+* .ATM_{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geologica", sans-serif;
+}
+
+:root {
+    --white: white;
+    --background-color: #f6f6f6;
+    --primary-color: #F8F4E1;
+    --secondary-color: #afa66f;
+    --accent-color: #74512D;
+    --dark-color: #544010;
+}
+
+.ATM_body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+}
+
+/* Form container styles */
+.ATM_form-container {
+    background-color: var(--primary-color);
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.ATM_h1 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+/* Success message */
+.ATM_success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form group styles */
+.ATM_form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.ATM_label {
+    flex-basis: 30%;
+    margin-right: 10px;
+    color: var(--dark-color);
+}
+
+.ATM_input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+    flex-basis: 65%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* Button styles */
+.ATM_button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.ATM_button:hover {
+    background-color: var(--dark-color);
+}
+
+/* Input focus effect */
+.ATM_form-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .ATM_form-container {
+        width: 90%;
+    }
+
+    .ATM_form-group {
+        flex-direction: column;
+    }
+
+    .ATM_label {
+        margin-bottom: 5px;
+    }
+
+    .ATM_input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+        flex-basis: 100%;
+    }
+}

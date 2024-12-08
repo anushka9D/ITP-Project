@@ -1,0 +1,155 @@
+/* Root CSS Variables */
+.FIN-payment-rq-form {
+    --primary-color: #b2751f; /* Dominant color (Orange) */
+    --secondary-color: #2ecc71; /* Secondary color (Green) */
+    --accent-color: #e74c3c; /* Accent color (Red) */
+    --text-color: #2c3e50; /* Text color */
+    --input-bg-color: #ecf0f1; /* Input background color */
+    --border-radius: 8px; /* Global border radius */
+    --transition-speed: 0.3s; /* Global transition speed */
+}
+
+.FIN-payment-rq-form body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f7;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.FIN-payment-rq-form .FIN-form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.FIN-payment-rq-form h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.FIN-payment-rq-form .FIN-form-group {
+    margin-bottom: 15px;
+}
+
+.FIN-payment-rq-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.FIN-payment-rq-form input,
+.FIN-payment-rq-form select {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--input-bg-color);
+    border: 1px solid #bdc3c7;
+    border-radius: var(--border-radius);
+    transition: border-color var(--transition-speed);
+    font-size: 1rem;
+    appearance: none; /* Removes default dropdown arrow */
+}
+
+.FIN-payment-rq-form input:focus,
+.FIN-payment-rq-form select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Calendar Icon Styling */
+.FIN-payment-rq-form .FIN-calendar-icon {
+    margin-left: 10px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Submit Button Styling */
+.FIN-payment-rq-form .FIN-submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.FIN-payment-rq-form .FIN-submit-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.FIN-payment-rq-form .FIN-submit-button:focus {
+    outline: none;
+}
+
+/* Dropdown Select Styling */
+.FIN-payment-rq-form .FIN-form-select {
+    cursor: pointer;
+    background-color: var(--input-bg-color);
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: var(--border-radius);
+    transition: border-color var(--transition-speed);
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Custom arrow for dropdown */
+.FIN-payment-rq-form .FIN-form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="var(--text-color)" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Hover and focus styles for select */
+.FIN-payment-rq-form .FIN-form-select:hover,
+.FIN-payment-rq-form .FIN-form-select:focus {
+    border-color: var(--primary-color);
+}
+
+/* Navbar styling */
+.FIN-payment-rq-form .FIN-nav-bar {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .FIN-payment-rq-form .FIN-form-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .FIN-payment-rq-form h1 {
+        font-size: 1.5rem;
+    }
+
+    .FIN-payment-rq-form input,
+    .FIN-payment-rq-form select {
+        font-size: 0.9rem;
+    }
+
+    .FIN-payment-rq-form .FIN-submit-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
